@@ -15,6 +15,6 @@ sockIO.on("connection", function(sock){
 });
 
 
-httpServer.listen(80, function(){
-    console.log('listening on *:' + 80);
+httpServer.listen(process.env.PORT || 5000, function(){
+    console.log('listening on *:' + 5000);
 });
